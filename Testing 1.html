@@ -1,0 +1,48 @@
+<html>
+    <body>
+        <div>
+        <h1>Hi can u be my valentines?</h1>
+        <div class="center">
+        <button id="ybutton" >Yes</button>
+        <button id="nbutton" >No</button>
+        <script src="index.js"></script>
+    </div>
+            <p id= "demo"></p>
+        <style>
+            .center {
+     margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+                    }
+            h1 {text-align: center;}
+            <div>{
+                text-align : center;
+                vertical-align: middle;
+            }
+            #nbutton{
+                position: absolute;
+            }
+        </style>
+            <script>
+                const element = document.getElementById("ybutton");
+                element.addEventListener("click",button);
+                function button() {
+                document.getElementById("demo").innerHTML = "Hi";
+                };
+            var b = document.getElementById("nbutton")
+            b.addEventListener("click", change);
+            function change() {
+                var i = Math.floor(Math.random()*550)+1;
+                var j = Math.floor(Math.random()*550)+1;
+                b.style.left = i+"px";
+                b.style.top = j+"px";
+              
+            
+            }
+0           </script>
+        </div>
+    </body>
+</html>
